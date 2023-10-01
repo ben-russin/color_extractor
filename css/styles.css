@@ -1,0 +1,115 @@
+* {
+  font-family: Lato, VT323, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between color picker and main content */
+}
+
+.background-color-picker {
+  flex-shrink: 0;
+  width: 300px;
+  height: 130px;
+  /*border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  */
+  
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+
+  /* Flexbox settings */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#background-color-input {
+  display: block;
+  margin: 0 0 16px 0;
+}
+
+.main-content {
+  flex-grow: 1; /* Let the main content grow and occupy remaining space */
+  justify-content: center;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(242, 236, 251);
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+#url {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+#image-upload {
+  margin-bottom: 20px;
+}
+
+.extractor1 .extractor2 {
+  width: 195px;;
+}
+
+#prevalent-color-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.color-extraction-container {
+  display: flex;
+
+  justify-content: center;
+}
+
+.color-box {
+  display: flex;
+
+  justify-content: center;
+
+
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+
+}
+
+
+.uploaded-image {
+  display:none; /* Hide the container by default */
+  flex: none; /* Prevent flexing */
+  width: 300px; /* Set a fixed width */
+  height: auto;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.uploaded-image img {
+  display:block; /* Show the image when available */
+}
+
+#uploaded-image {
+  max-width: 300px; /* Make the image take up the full width within the container */
+  height: auto;
+}
+
+.uploaded-image .no-image {
+  display: none; /* Hide the no-image text by default */
+}

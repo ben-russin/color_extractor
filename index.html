@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Extraction</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="loadDefaultImage()">
+
+  <div class="container">
+
+    <div class="main-content">
+      <h1>Create A Color Palette From A Picture 🎨</h1>
+      <div class="sub-content">      
+        <div>
+          <form id="upload-form">
+            <h2>Extract colors from an uploaded image</h2>
+            <label for="image-upload">Upload Image:</label>
+            <input type="file" id="image-upload">
+            <br>
+            <!-- Add the upload submit button within the form -->
+            <button class="extractor2" id="extract-upload">Extract Colors</button>
+          </form> <!-- Close the upload form here -->
+        </div>
+      </div>
+      <h2>Color Palette:</h2>
+      <div class="color-extraction-container">
+        <div class="color-list">
+          <ul id="prevalent-color-list"></ul>
+        </div>
+        <div class="uploaded-image">
+          <img id="uploaded-image" src="" alt="Uploaded Image">
+          <p class="no-image">No Image</p>
+        </div>
+      </div>
+      <div class="background-color-picker">
+        <h3>Change Background Color</h3>
+        <input type="color" id="background-color-input" value="#f2ecfb">
+        <button onclick="changeBackgroundColor()">Apply</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.2/chroma.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.min.js"></script> -->
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
