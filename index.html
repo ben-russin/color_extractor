@@ -18,9 +18,11 @@
       <div class="sub-content">      
         <div>
           <form id="upload-form">
-            <h2>Extract colors from an uploaded image</h2>
-            <label for="image-upload">Upload Image:</label>
-            <input type="file" id="image-upload">
+            <div class="h2label"> 
+              <h2>Extract colors from an uploaded image</h2>
+              <label for="image-upload">Upload Image:</label>
+              <input type="file" id="image-upload">
+            </div>
             <br>
             <!-- Add the upload submit button within the form -->
             <button class="extractor2" id="extract-upload">Extract Colors</button>
@@ -39,9 +41,11 @@
       </div>
       <div class="background-color-picker">
         <h3>Change Background Color</h3>
-        <input type="color" id="background-color-input" value="#f2ecfb">
-        <button onclick="changeBackgroundColor()">Apply</button>
-      </div>
+        <div class="color-action-container">
+            <input type="color" id="background-color-input" value="#f2ecfb">
+            <button onclick="changeBackgroundColor()">Apply</button>
+        </div>
+    </div>
     </div>
 
   </div>
@@ -49,8 +53,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.2/chroma.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.min.js"></script> -->
 
   <script src="js/main.js"></script>
 </body>
